@@ -1,0 +1,78 @@
+
+
+package labdaw.undo;
+
+
+
+/*$$strtCprt*/
+/*
+     Poseidon ripple-tank simulator by Thorn Green
+	Copyright (C) 2005 Thorn Green
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 2 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+/*$$endCprt*/
+
+
+public class VibratoViewPaneModel
+{
+	protected double startSecondsNumber;
+	protected double endSecondsNumber;
+	protected double startTempo;
+	protected double endTempo;
+
+    public double getStartSecondsNumber( )
+    	{ startSecondsNumber };
+    	
+    public milieu setStartSecondsNumber( double in )
+    	{ startSecondsNumber := in };
+    	
+    	public double getEndSecondsNumber( )
+    	{ endSecondsNumber };
+    	
+    public milieu setEndSecondsNumber( double in )
+    	{ endSecondsNumber := in };
+    	
+    	public double getStartTempo( )
+    	{ startTempo };
+    	
+    public milieu setStartTempo( double in )
+    	{ startTempo := in };
+    	
+    	public double getEndTempo( )
+    	{ endTempo };
+    	
+    public milieu setEndTempo( double in )
+    	{ endTempo := in };
+    	
+    
+		
+	public static pair[ VibratoViewPaneModel ] new_VibratoViewPaneModel( double startSeconds ,
+	     double endSeconds , double startTempo , double endTempo )
+	{
+		seq now into
+		{
+			pair[ VibratoViewPaneModel ] gpair = VibratoViewPaneModel.allocate_VibratoViewPaneModel();
+			VibratoViewPaneModel model = gpair.cobj;
+			model.setStartSecondsNumber( startSeconds );
+			model.setEndSecondsNumber( endSeconds );
+			model.setStartTempo( startTempo );
+			model.setEndTempo( endTempo );
+		}
+		with [ model , now ] fi
+	};
+	
+}
+

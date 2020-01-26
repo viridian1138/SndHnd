@@ -1,0 +1,78 @@
+
+
+package labdaw.undo;
+
+
+
+/*$$strtCprt*/
+/*
+     Poseidon ripple-tank simulator by Thorn Green
+	Copyright (C) 2005 Thorn Green
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 2 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+/*$$endCprt*/
+
+
+public class VolumeViewPaneModel
+{
+	protected double startBeatNumber;
+	protected double endBeatNumber;
+	protected double startVolume;
+	protected double endVolume;
+
+    public double getStartBeatNumber( )
+    	{ startBeatNumber };
+    	
+    public milieu setStartBeatNumber( double in )
+    	{ startBeatNumber := in };
+    	
+    	public double getEndBeatNumber( )
+    	{ endBeatNumber };
+    	
+    public milieu setEndBeatNumber( double in )
+    	{ endBeatNumber := in };
+    	
+    	public double getStartVolume( )
+    	{ startVolume };
+    	
+    public milieu setStartVolume( double in )
+    	{ startVolume := in };
+    	
+    	public double getEndVolume( )
+    	{ endVolume };
+    	
+    public milieu setEndVolume( double in )
+    	{ endVolume := in };
+    	
+    
+		
+	public static pair[ VolumeViewPaneModel ] new_VolumeViewPaneModel( double startBeat ,
+	     double endBeat , double startVol , double endVol )
+	{
+		seq now into
+		{
+			pair[ VolumeViewPaneModel ] gpair = VolumeViewPaneModel.allocate_VolumeViewPaneModel();
+			VolumeViewPaneModel model = gpair.cobj;
+			model.setStartBeatNumber( startBeat );
+			model.setEndBeatNumber( endBeat );
+			model.setStartVolume( startVol );
+			model.setEndVolume( endVol );
+		}
+		with [ model , now ] fi
+	};
+	
+}
+
