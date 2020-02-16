@@ -72,7 +72,7 @@ public class IntonationPlayerTwoSideEditor
 	/**
 	 * Combo box for editing the index on the scale at which to start playing.
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
 	/**
 	 * Text field for entering the number of the melodic interval in which to calculate the intonation.

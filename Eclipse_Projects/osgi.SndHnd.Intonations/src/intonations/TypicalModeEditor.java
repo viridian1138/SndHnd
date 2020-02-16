@@ -69,13 +69,13 @@ public class TypicalModeEditor
 	/**
 	 * Combo box for selecting the kind of mode to be applied.
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
 	/**
 	 * Combo box for selecting the key
 	 * (for instance key of C#) of the intonation.
 	 */
-	protected JComboBox key = new JComboBox();
+	protected JComboBox<String> key = new JComboBox<String>();
 	
 
 	

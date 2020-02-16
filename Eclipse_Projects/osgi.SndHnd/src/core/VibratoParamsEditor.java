@@ -108,7 +108,7 @@ public class VibratoParamsEditor extends PropertyEditAdapter implements
 	/**
 	 * The mode of the vibrato (e.g. whether to use pitch vibrato or tremolo).
 	 */
-	protected JComboBox vibratoMode = new JComboBox();
+	protected JComboBox<String> vibratoMode = new JComboBox<String>();
 	
 	/**
 	 * The apply button for applying the changes.

@@ -69,9 +69,9 @@ public class ConflateEditor
 	/**
 	 * Combo box from which to select the index into Intonation #2
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
-
+;
 	
 	/**
 	* Constructs the property editor for a given GConflate.

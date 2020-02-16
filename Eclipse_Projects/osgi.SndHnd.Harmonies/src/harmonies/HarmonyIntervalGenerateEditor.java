@@ -80,7 +80,7 @@ public class HarmonyIntervalGenerateEditor
 	/**
 	 * Combo box for selecting the index into the intonation for the tonic.
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
 	/**
 	 * Text field for entering the number of the melodic interval for the tonic.
@@ -90,7 +90,7 @@ public class HarmonyIntervalGenerateEditor
 	/**
 	 * Combo box for selecting the index into the intonation for the harmony.
 	 */
-	protected JComboBox ind2 = new JComboBox();
+	protected JComboBox<String> ind2 = new JComboBox<String>();
 	
 	/**
 	 * Text field for entering the number of the melodic interval for the harmony.

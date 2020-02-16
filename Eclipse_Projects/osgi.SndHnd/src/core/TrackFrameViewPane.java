@@ -68,7 +68,7 @@ public class TrackFrameViewPane extends JPanel implements ActionListener {
 	/**
 	 * The list of track frames.
 	 */
-	final JList lst = new JList();
+	final JList<String> lst = new JList<String>();
 	
 	
 	/**

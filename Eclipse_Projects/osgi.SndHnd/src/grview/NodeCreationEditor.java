@@ -80,7 +80,7 @@ public class NodeCreationEditor
 	/**
 	 * The list of possible nodes that can be created.
 	 */
-	protected JList creationList = new JList();
+	protected JList<String> creationList = new JList<String>();
 	
 	/**
 	 * The classes the the list of possible nodes than can be created.
@@ -151,7 +151,7 @@ public class NodeCreationEditor
 	protected void updatePalette()
 	{
 		paletteClasses = palette.getPaletteClasses();
-		DefaultListModel lm = new DefaultListModel();
+		DefaultListModel<String> lm = new DefaultListModel<String>();
 		creationList.setModel(lm);
 		for( Class<? extends GNode> cl : paletteClasses )
 		{

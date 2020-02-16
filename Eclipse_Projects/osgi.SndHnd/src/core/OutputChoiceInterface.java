@@ -81,7 +81,7 @@ public class OutputChoiceInterface implements ActionListener {
 
 	JPanel pan = new JPanel();
 
-	JList lst = new JList();
+	JList<String> lst = new JList<String>();
 
 	JMenuItem playButton = new JMenuItem("Play");
 

@@ -58,7 +58,7 @@ public class SimplePitchEdit extends JPanel {
 	{
 		final JButton insertButton = new JButton( "Insert" );
 		final JTextField melodicIntervalField = new JTextField( "2" );
-		final JComboBox pitchBox = new JComboBox();
+		final JComboBox<String> pitchBox = new JComboBox<String>();
 		
 		int count = 0;
 		String[] names = NoteTable.getScaleNamesDefaultScale_Key();

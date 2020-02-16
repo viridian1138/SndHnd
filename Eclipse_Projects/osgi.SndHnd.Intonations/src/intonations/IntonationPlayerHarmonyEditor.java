@@ -72,7 +72,7 @@ public class IntonationPlayerHarmonyEditor
 	/**
 	 * Combo box for selecting the index on the scale at which to start playing for the ascending scale.
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
 	/**
 	 * Text field for editing the number of the melodic interval in which to play the intonation for the ascending scale.
@@ -82,7 +82,7 @@ public class IntonationPlayerHarmonyEditor
 	/**
 	 * Combo box for selecting the index on the scale at which to start playing for the descending scale.
 	 */
-	protected JComboBox ind2 = new JComboBox();
+	protected JComboBox<String> ind2 = new JComboBox<String>();
 	
 	/**
 	 * Text field for editing the number of the melodic interval in which to play the intonation for the descending scale.

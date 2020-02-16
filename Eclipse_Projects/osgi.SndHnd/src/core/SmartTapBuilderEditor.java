@@ -93,7 +93,7 @@ public class SmartTapBuilderEditor extends PropertyEditAdapter implements
 	/**
 	 * Combo boxes for editing the step on the current intonation scale for the pitches at which to insert the notes.
 	 */
-	protected JComboBox[] noteComboBoxes = new JComboBox[ MAX_TAPS ];
+	protected JComboBox<String>[] noteComboBoxes = new JComboBox[ MAX_TAPS ];
 	
 	/**
 	 * Check box for editing whether to have statistical variation in pitch.
@@ -182,7 +182,7 @@ public class SmartTapBuilderEditor extends PropertyEditAdapter implements
 		for( cnt = 0 ; cnt < MAX_TAPS ; cnt++ )
 		{
 			melodicIntervalFields[ cnt ] = new JTextField( "3" );
-			noteComboBoxes[ cnt ] = new JComboBox();
+			noteComboBoxes[ cnt ] = new JComboBox<String>();
 			
 		}
 		

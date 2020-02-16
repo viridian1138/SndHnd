@@ -94,9 +94,9 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 	
 	
 	
-	protected JComboBox samplingRate;
+	protected JComboBox<String> samplingRate;
 	
-	protected JComboBox pseudonymicDivisor;
+	protected JComboBox<String> pseudonymicDivisor;
 	
 	protected JCheckBox reSampleOnBuild;
 	
@@ -104,7 +104,7 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 	
 	
 	
-	protected JList alst;
+	protected JList<String> alst;
 	protected Vector<Class<? extends IntelligentAgent>> avct;
 	
 	
@@ -200,11 +200,11 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 		TabPane.add("Sampling Rate",p6);
 		p6.setLayout(new VerticalLayout(1));
 		
-		samplingRate = new JComboBox();
+		samplingRate = new JComboBox<String>();
 		samplingRate.setEditable(true);
 		p6.add("any",new JLabel("Sampling Rate : "));
 		p6.add("any",samplingRate);
-		DefaultComboBoxModel srmodel = new DefaultComboBoxModel();
+		DefaultComboBoxModel<String> srmodel = new DefaultComboBoxModel<String>();
 		samplingRate.setModel( srmodel );
 		samplingRate.addItem("12000");
 		samplingRate.addItem("24000");
@@ -217,11 +217,11 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 		samplingRate.addItem("384000");
 		srmodel.setSelectedItem("" + TestPlayer2.getSamplingRate() );
 		
-		pseudonymicDivisor = new JComboBox();
+		pseudonymicDivisor = new JComboBox<String>();
 		pseudonymicDivisor.setEditable(true);
 		p6.add("any",new JLabel("Pseudonymic Divisor : "));
 		p6.add("any",pseudonymicDivisor);
-		DefaultComboBoxModel psmodel = new DefaultComboBoxModel();
+		DefaultComboBoxModel<String> psmodel = new DefaultComboBoxModel<String>();
 		pseudonymicDivisor.setModel( psmodel );
 		pseudonymicDivisor.addItem("1");
 		pseudonymicDivisor.addItem("2");
@@ -282,7 +282,7 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 		JPanel pan6 = new JPanel();
 		TabPane.add("Agent", pan6);
 		pan6.setLayout(new VerticalLayout(1));
-		alst = new JList();
+		alst = new JList<String>();
 		JScrollPane ascp = new JScrollPane( alst );
 		pan6.add("any", ascp );
 		JButton AgentApplyButton = new JButton("Apply");
@@ -379,9 +379,9 @@ public class SndHndPropertyEditor extends DefaultPropertyEditor {
 		}
 	}
 	
-	protected void buildAgentListModel( JList alst )
+	protected void buildAgentListModel( JList<String> alst )
 	{
-		DefaultListModel lm = new DefaultListModel();
+		DefaultListModel<String> lm = new DefaultListModel<String>();
 		avct = new Vector<Class<? extends IntelligentAgent>>();
 		
 		Map<String,Class<? extends IntelligentAgent>> hm = AgentManager.getMapClone();

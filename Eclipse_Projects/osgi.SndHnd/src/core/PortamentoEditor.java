@@ -85,12 +85,12 @@ public class PortamentoEditor
 	/**
 	 * The list model for managing the list of portamentos.
 	 */
-	protected DefaultListModel model = new DefaultListModel();
+	protected DefaultListModel<String> model = new DefaultListModel<String>();
 	
 	/**
 	 * The displayed list of portamentos.
 	 */
-	protected JList transitionList = new JList();
+	protected JList<String> transitionList = new JList<String>();
 	
 	/**
 	 * Button to edit a portamento transition.

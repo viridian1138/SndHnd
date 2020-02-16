@@ -84,7 +84,7 @@ public class MultiplicativeAdjustEditor
 	/**
 	 * Combo box from which to select from default ratio settings.
 	 */
-	protected JComboBox ind = new JComboBox();
+	protected JComboBox<String> ind = new JComboBox<String>();
 	
 	
 	public static final int RATIO_444 = 0;

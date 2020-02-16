@@ -70,7 +70,7 @@ public class StackingThirdsEditor
 	/**
 	 * Combo box for selecting the name of the key for the tonic of the harmony.
 	 */
-	protected JComboBox key = new JComboBox();
+	protected JComboBox<String> key = new JComboBox<String>();
 	
 	/**
 	 * Text field for editing the number of thirds to be stacked.

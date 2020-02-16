@@ -84,7 +84,7 @@ public class TenoriViewPaneKeyEditor
 	 * Combo box for selecting the key.
 	 * The possible selections for this combo box are a direct function of what the user has selected as an intonation.
 	 */
-	protected JComboBox key = new JComboBox();
+	protected JComboBox<String> key = new JComboBox<String>();
 	
 	/**
 	 * Text field for editing the tempo (in beats per minute).

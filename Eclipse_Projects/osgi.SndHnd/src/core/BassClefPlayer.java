@@ -68,7 +68,7 @@ public class BassClefPlayer extends PropertyEditAdapter implements
 	/**
 	 * Combo fox for selecting whether the key signature has sharps or flats.
 	 */
-	protected JComboBox sharpOrFlat = new JComboBox();
+	protected JComboBox<String> sharpOrFlat = new JComboBox<String>();
 	
 	
 	/**

@@ -99,7 +99,7 @@ public class DissonanceIntonationEditor
 	/**
 	 * Combo box for selecting the name of the key in which to calculate the intonation.
 	 */
-	protected JComboBox key = new JComboBox();
+	protected JComboBox<String> key = new JComboBox<String>();
 
 	/**
 	 * The context in which to evaluate EditPack instances.

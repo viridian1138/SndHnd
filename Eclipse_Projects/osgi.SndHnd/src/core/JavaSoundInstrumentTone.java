@@ -75,7 +75,7 @@ public class JavaSoundInstrumentTone {
 				items[ cnt ] = i[ cnt ].getName();
 			}
 	        
-	        JList list = new JList(items);
+	        JList<String> list = new JList<String>(items);
 	        
 	        JScrollPane jsp = new JScrollPane( list );
 	        
